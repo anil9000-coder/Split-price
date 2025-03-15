@@ -1,14 +1,27 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
   margin: 0;
   padding: 0;
   color: #333;
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); /* Add your background image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Overlay to make text readable */
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  width: 100%;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -16,7 +29,7 @@ body {
   width: 100%;
   margin: 20px;
   padding: 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -25,6 +38,11 @@ h1 {
   text-align: center;
   color: #4a90e2;
   margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  color: #555;
 }
 
 /* Form Container Styles */
